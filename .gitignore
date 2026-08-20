@@ -2,8 +2,9 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 mlruns/
+mlflow.db
+*.db
 .DS_Store
 .venv/
+.vscode
 .env
-.vscode/
-mlflow.db
