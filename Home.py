@@ -50,11 +50,11 @@ c1, c2, c3, c4 = st.columns(4)
 
 c1.metric("Classifier", type(models['classifier']).__name__, icon = ":material/account_tree:")
 
-c2.metric("Test Accuracy", "93.3%", icon = ":material/target:")
+c2.metric("Test Accuracy", "97.0%", icon = ":material/target:")
 
 c3.metric("Regressor", type(models['regressor']).__name__, icon = ":material/trending_up:")
 
-c4.metric("Regression R\u00b2", "0.98", icon = ":material/analytics:")
+c4.metric("Regression R\u00b2", "0.99", icon = ":material/analytics:")
 
 st.caption(
 

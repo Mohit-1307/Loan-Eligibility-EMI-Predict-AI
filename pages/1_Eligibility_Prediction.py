@@ -67,7 +67,9 @@ if predict_clicked:
     result_style = {
         
         'Eligible': (':material/check_circle:', 'green', "This applicant looks eligible for the requested EMI."),
+
         'High_Risk': (':material/warning:', 'orange', "This applicant is borderline - recommended for manual review."),
+
         'Not_Eligible': (':material/cancel:', 'red', "This applicant does not currently meet the eligibility bar.")
         
     }
@@ -83,6 +85,7 @@ if predict_clicked:
     proba_df = pd.DataFrame({
         
         'Eligibility': list(proba_by_class.keys()),
+        
         'Probability': list(proba_by_class.values())
         
     }).sort_values('Probability', ascending = False)
