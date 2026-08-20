@@ -11,7 +11,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-**🔗 Live App:** [emi-predict-ai-app.streamlit.app](https://emi-pridict-ai.streamlit.app/)
+**🔗 Live App:** [emi-predict-ai-app.streamlit.app](https://emi-predict-ai-app.streamlit.app/)
 
 > An end-to-end Machine Learning project that predicts a loan applicant's **EMI eligibility** and their **maximum safe monthly EMI**, helping financial institutions make faster, more consistent, and data-driven lending decisions.
 
@@ -107,7 +107,7 @@ This project addresses these challenges with a trained classifier for eligibilit
 
 The Streamlit application is deployed and publicly accessible here:
 
-**🔗 [https://emi-pridict-ai-app.streamlit.app/](https://emi-pridict-ai.streamlit.app/)**
+**🔗 [https://emi-predict-ai-app.streamlit.app/](https://emi-predict-ai-app.streamlit.app/)**
 
 Use it to try both modules directly in the browser, no local setup required:
 
@@ -570,7 +570,7 @@ Tuned via `RandomizedSearchCV`. Outperformed all other candidates on every regre
 
 # Installation Guide
 
-> Prefer not to install anything? Try the live app instead: [emi-pridict-ai.streamlit.app](https://emi-pridict-ai.streamlit.app/)
+> Prefer not to install anything? Try the live app instead: [emi-predict-ai-app.streamlit.app](https://emi-predict-ai-app.streamlit.app/)
 
 ```bash
 git clone <repository-url>
