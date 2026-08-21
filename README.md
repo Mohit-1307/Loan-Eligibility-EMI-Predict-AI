@@ -9,7 +9,6 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Web%20App-red)
 ![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-0194E2)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 **🔗 Live App:** [emi-predict-ai-app.streamlit.app](https://emi-predict-ai-app.streamlit.app/)
 
@@ -103,7 +102,7 @@ This project addresses these challenges with a trained classifier for eligibilit
 
 ---
 
-# Live Demo
+# Live App
 
 The Streamlit application is deployed and publicly accessible here:
 
@@ -710,18 +709,6 @@ Random Seed:
 ```python
 random_state = 42
 ```
-
----
-
-# Key Learnings
-
-* Financial ratio feature engineering for credit risk modeling
-* Multi-model comparison across classification and regression tasks
-* Class-imbalance handling via sample weighting
-* Boosting vs. bagging vs. single-tree trade-offs on tabular financial data
-* MLflow-based experiment tracking
-* Streamlit deployment for a dual-task ML application
-* Keeping model documentation, notebook outputs, and deployed metrics in sync
 
 ---
 
