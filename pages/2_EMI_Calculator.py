@@ -102,7 +102,7 @@ if calculate_clicked:
         max_affordable_amount = predicted_emi * raw['requested_tenure']
 
         st.write(f":material/info: At the requested {raw['requested_tenure']}-month tenure, a loan amount up to "
-                 f"**\u20b9{max_affordable_amount:,.0f}** would stay within the safe EMI limit.")
+                f"**\u20b9{max_affordable_amount:,.0f}** would stay within the safe EMI limit.")
 
     st.subheader(":material/query_stats: What Drives This Estimate")
 

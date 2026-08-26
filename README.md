@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💳 EMIPredict AI: Loan Eligibility & Safe EMI Prediction System
+# 💳 Loan Eligibility & Safe EMI Prediction System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange)
