@@ -11,7 +11,7 @@ from utils.model_loader import get_models
 
 st.set_page_config(
 
-    page_title = "EMIPredict AI",
+    page_title = "Loan Eligibilty and EMI Prediction AI",
 
     page_icon = ":material/account_balance:",
 
@@ -21,14 +21,14 @@ st.set_page_config(
 
 models = get_models()
 
-st.title(":material/account_balance: EMIPredict AI")
+st.title(":material/account_balance: Loan Eligibilty and EMI Prediction AI")
 
 st.subheader("Intelligent Financial Risk Assessment Platform")
 
 st.markdown(
     
 """
-EMIPredict AI gives loan officers and applicants an instant, data-backed
+Loan Eligibilty and EMI Prediction AI gives loan officers and applicants an instant, data-backed
 first pass on an EMI application - an eligibility decision and a safe
 monthly EMI estimate, both generated in real time from a model trained on
 404,800 historical applications.
@@ -59,7 +59,7 @@ c4.metric("Regression R\u00b2", "0.99", icon = ":material/analytics:")
 st.caption(
 
 "Both figures are from the held-out test set in the model-development notebook "
-"(notebooks/EMIPredict_AI_Model_Development.ipynb) - see the Model Performance page for the full comparison."
+"(notebooks/Loan_Eligibilty_and_EMI_Prediction_AI_Model_Development.ipynb) - see the Model Performance page for the full comparison."
 
 )
 
