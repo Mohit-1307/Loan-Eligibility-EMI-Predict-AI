@@ -125,7 +125,7 @@ EMI-Predict-AI/
 
 ```bash
 git clone <repository-url>
-cd EMI-Predict-AI
+cd Loan-Eligibility-and-EMI-Prediction-AI
 pip install -r requirements.txt
 streamlit run Home.py
 ```
