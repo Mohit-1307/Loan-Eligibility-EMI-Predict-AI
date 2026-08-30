@@ -1,6 +1,6 @@
 <div align="center">
 
-# EMI Predict AI
+# Loan Eligibility and EMI Predict AI
 
 **Loan Eligibility and Safe EMI Prediction using Machine Learning**
 
