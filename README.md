@@ -6,7 +6,7 @@
 
 An end-to-end supervised learning project that predicts a loan applicant's EMI eligibility and their maximum safe monthly EMI — combining engineered financial ratios with tuned classification and regression models, deployed as an interactive Streamlit app.
 
-**[Live App →](https://emi-predict-ai-app.streamlit.app)**
+**[Live App →](https://loan-eligibility-and-emi-prediction-ai.streamlit.app)**
 
 </div>
 
