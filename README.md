@@ -107,7 +107,7 @@ EMI-Predict-AI/
 │   ├── data_insights.py
 │   ├── eligibility_prediction.py
 │   ├── emi_calculator.py
-│   ├── home .py                               
+│   ├── home.py                               
 │   └── model_performance.py
 ├── utils/
 │   ├── model_loader.py
