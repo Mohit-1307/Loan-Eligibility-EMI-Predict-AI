@@ -113,9 +113,9 @@ EMI-Predict-AI/
 │   ├── model_loader.py
 │   ├── form_inputs.py
 │   └── preprocessing.py
-├── .gitignore   
-├── app.py                                     # Streamlit application entry point
+├── .gitignore
 ├── README.md
+├── app.py                                     # Streamlit application entry point
 └── requirements.txt                           # Python dependencies
 ```
 
