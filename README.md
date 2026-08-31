@@ -93,31 +93,17 @@ Eligibility classes are imbalanced (`Not_Eligible` majority, `High_Risk` minorit
 
 ```
 EMI-Predict-AI/
-├── .streamlit                                 # Streamlit theme
-├── assets/                                    # App images/icons
+├── .streamlit          
+├── assets/              
 ├── models/
-│   ├── final_classifier.joblib                # Trained XGBoost classifier
-│   ├── final_regressor.joblib                 # Trained XGBoost regressor
-│   ├── scaler.joblib                          # StandardScaler fit on numerical features
-│   ├── label_encoder.joblib                   # Encoders for categorical features
-│   └── feature_names.joblib                   # Final engineered feature list
 ├── notebooks/
-│   ├── loan_eligibility_and_emi_prediction_ai_model_development.ipynb  # Full analysis: EDA, feature engineering, modeling, evaluation
 ├── pages/
-│   ├── data_insights.py
-│   ├── eligibility_prediction.py
-│   ├── emi_calculator.py
-│   ├── home.py                               
-│   └── model_performance.py
 ├── utils/
-│   ├── model_loader.py
-│   ├── form_inputs.py
-│   └── preprocessing.py
 ├── .gitignore
 ├── README.md
-├── app.py                                     # Streamlit application entry point
-├── emi_prediction.csv                         # Dataset
-└── requirements.txt                           # Python dependencies
+├── app.py                                     
+├── emi_prediction.csv
+└── requirements.txt              
 ```
 
 ---
