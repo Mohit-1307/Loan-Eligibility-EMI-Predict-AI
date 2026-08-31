@@ -93,10 +93,16 @@ Eligibility classes are imbalanced (`Not_Eligible` majority, `High_Risk` minorit
 
 ```
 EMI-Predict-AI/
-├── Home.py                                    # Streamlit application entry point
+├── .streamlit                                 # Streamlit theme
+├── assets/                                    # App images/icons
+├── models/
+│   ├── final_classifier.joblib                # Trained XGBoost classifier
+│   ├── final_regressor.joblib                 # Trained XGBoost regressor
+│   ├── scaler.joblib                          # StandardScaler fit on numerical features
+│   ├── label_encoder.joblib                   # Encoders for categorical features
+│   └── feature_names.joblib                   # Final engineered feature list
 ├── notebooks/
-│   ├── EMIPredict_AI_Model_Development.ipynb  # Full analysis: EDA, feature engineering, modeling, evaluation
-│   └── images/                                # Saved chart exports from the notebook
+│   ├── loan_eligibility_and_emi_prediction_ai_model_development.ipynb  # Full analysis: EDA, feature engineering, modeling, evaluation
 ├── pages/
 │   ├── 1_Eligibility_Prediction.py
 │   ├── 2_EMI_Calculator.py
@@ -106,15 +112,10 @@ EMI-Predict-AI/
 │   ├── model_loader.py
 │   ├── form_inputs.py
 │   └── preprocessing.py
-├── models/
-│   ├── final_classifier.joblib                # Trained XGBoost classifier
-│   ├── final_regressor.joblib                 # Trained XGBoost regressor
-│   ├── scaler.joblib                          # StandardScaler fit on numerical features
-│   ├── label_encoder.joblib                   # Encoders for categorical features
-│   └── feature_names.joblib                   # Final engineered feature list
-├── assets/                                    # App images/icons
-├── requirements.txt                           # Python dependencies
-└── README.md
+├── .gitignore
+├── Home.py                                    # Streamlit application entry point
+├── README.md
+└── requirements.txt                           # Python dependencies
 ```
 
 ---
