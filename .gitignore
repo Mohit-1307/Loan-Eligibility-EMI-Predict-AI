@@ -9,3 +9,4 @@ mlruns/
 .env
 .devcontainer/
 data/
+images/
