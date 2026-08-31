@@ -94,8 +94,6 @@ Eligibility classes are imbalanced (`Not_Eligible` majority, `High_Risk` minorit
 ```
 EMI-Predict-AI/
 ├── Home.py                                    # Streamlit application entry point
-├── data/
-│   └── emi_prediction_dataset.csv             # Raw dataset
 ├── notebooks/
 │   ├── EMIPredict_AI_Model_Development.ipynb  # Full analysis: EDA, feature engineering, modeling, evaluation
 │   └── images/                                # Saved chart exports from the notebook
@@ -153,19 +151,6 @@ The app expects the trained artifacts (`final_classifier.joblib`, `final_regress
 [![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)](https://www.kaggle.com/mohitsinghrajput1307)
 [![LeetCode](https://img.shields.io/badge/LeetCode-181717?style=flat-square&logo=leetcode&logoColor=FFA116)](https://leetcode.com/u/MOHIT_SINGH_RAJPUT/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mohitsinghrajput1307@gmail.com)
-
----
-
-# Acknowledgements
-
-* EMI Prediction Dataset
-* Scikit-Learn
-* XGBoost
-* MLflow
-* Streamlit
-* Pandas
-* NumPy
-* Matplotlib
 
 ---
 
