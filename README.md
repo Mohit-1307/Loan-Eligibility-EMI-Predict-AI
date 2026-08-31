@@ -104,16 +104,17 @@ EMI-Predict-AI/
 ├── notebooks/
 │   ├── loan_eligibility_and_emi_prediction_ai_model_development.ipynb  # Full analysis: EDA, feature engineering, modeling, evaluation
 ├── pages/
-│   ├── 1_Eligibility_Prediction.py
-│   ├── 2_EMI_Calculator.py
-│   ├── 3_Model_Performance.py
-│   └── 4_Data_Insights.py
+│   ├── data_insights.py
+│   ├── eligibility_prediction.py
+│   ├── emi_calculator.py
+│   ├── home .py                               
+│   └── model_performance.py
 ├── utils/
 │   ├── model_loader.py
 │   ├── form_inputs.py
 │   └── preprocessing.py
-├── .gitignore
-├── Home.py                                    # Streamlit application entry point
+├── .gitignore   
+├── app.py                                     # Streamlit application entry point
 ├── README.md
 └── requirements.txt                           # Python dependencies
 ```

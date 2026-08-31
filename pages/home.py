@@ -10,13 +10,9 @@ import streamlit as st
 from utils.model_loader import get_models
 
 st.set_page_config(
-
-    page_title = "Loan Eligibilty and EMI Prediction AI",
-
-    page_icon = ":material/account_balance:",
-
-    layout = "wide"
-
+    page_title="Loan Eligibilty and EMI Prediction AI",
+    page_icon=":material/account_balance:",
+    layout="wide",
 )
 
 models = get_models()
@@ -25,9 +21,7 @@ st.title(":material/account_balance: Loan Eligibilty and EMI Prediction AI")
 
 st.subheader("Intelligent Financial Risk Assessment Platform")
 
-st.markdown(
-    
-"""
+st.markdown("""
 Loan Eligibilty and EMI Prediction AI gives loan officers and applicants an instant, data-backed
 first pass on an EMI application - an eligibility decision and a safe
 monthly EMI estimate, both generated in real time from a model trained on
@@ -38,9 +32,7 @@ monthly EMI estimate, both generated in real time from a model trained on
 - :material/calculate: **EMI Calculator** - estimate the maximum monthly EMI an applicant can safely afford
 - :material/insights: **Model Performance** - see how the underlying models were evaluated
 - :material/bar_chart: **Data Insights** - explore trends across the historical applicant dataset
-"""
-
-)
+""")
 
 st.divider()
 
@@ -48,19 +40,21 @@ st.subheader(":material/dashboard: Model Snapshot")
 
 c1, c2, c3, c4 = st.columns(4)
 
-c1.metric("Classifier", type(models['classifier']).__name__, icon = ":material/account_tree:")
+c1.metric(
+    "Classifier", type(models["classifier"]).__name__, icon=":material/account_tree:"
+)
 
-c2.metric("Test Accuracy", "97.0%", icon = ":material/target:")
+c2.metric("Test Accuracy", "97.0%", icon=":material/target:")
 
-c3.metric("Regressor", type(models['regressor']).__name__, icon = ":material/trending_up:")
+c3.metric(
+    "Regressor", type(models["regressor"]).__name__, icon=":material/trending_up:"
+)
 
-c4.metric("Regression R\u00b2", "0.99", icon = ":material/analytics:")
+c4.metric("Regression R\u00b2", "0.99", icon=":material/analytics:")
 
 st.caption(
-
-"Both figures are from the held-out test set in the model-development notebook "
-"(notebooks/Loan_Eligibilty_and_EMI_Prediction_AI_Model_Development.ipynb) - see the Model Performance page for the full comparison."
-
+    "Both figures are from the held-out test set in the model-development notebook "
+    "(notebooks/Loan_Eligibilty_and_EMI_Prediction_AI_Model_Development.ipynb) - see the Model Performance page for the full comparison."
 )
 
 st.divider()
