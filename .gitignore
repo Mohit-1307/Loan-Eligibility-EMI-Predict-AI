@@ -8,5 +8,4 @@ mlruns/
 .vscode/
 .env
 .devcontainer/
-data/
 images/
