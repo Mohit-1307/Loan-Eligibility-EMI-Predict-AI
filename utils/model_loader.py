@@ -1,16 +1,12 @@
-"""
-Loan Eligibilty and EMI Prediction AI - Model Loader
-
-Loads the trained models and preprocessing objects once per session and
-caches them, so every page can call get_models() cheaply instead of
-re-reading the .joblib files from disk on every rerun.
-"""
-
 import joblib
 import streamlit as st
 from pathlib import Path
+import pandas as pd
 
-MODELS_DIR = Path(__file__).resolve().parent.parent / "models"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+DATA_PATH = ROOT_DIR / "emi_prediction.csv"
+MODELS_DIR = ROOT_DIR / "models"
 
 
 @st.cache_resource
@@ -18,13 +14,9 @@ def get_models():
     """Load every trained model and preprocessing object once, cached for the session."""
 
     classifier = joblib.load(MODELS_DIR / "final_classifier.joblib")
-
     regressor = joblib.load(MODELS_DIR / "final_regressor.joblib")
-
     scaler = joblib.load(MODELS_DIR / "scaler.joblib")
-
     label_encoder = joblib.load(MODELS_DIR / "label_encoder.joblib")
-
     feature_names = joblib.load(MODELS_DIR / "feature_names.joblib")
 
     return {
@@ -38,18 +30,12 @@ def get_models():
 
 @st.cache_data
 def get_dataset_sample(n=20000):
-    """Load a sample of the training dataset for the data insights page - a sample keeps page load fast without needing all 400K+ rows in memory."""
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(f"Dataset not found: {DATA_PATH}")
 
-    import pandas as pd
-
-    data_path = (
-        Path(__file__).resolve().parent.parent / "data" / "emi_prediction.csv"
-    )
-
-    df = pd.read_csv(data_path, low_memory=False)
+    df = pd.read_csv(DATA_PATH, low_memory=False)
 
     if len(df) > n:
-
         df = df.sample(n, random_state=42)
 
     return df
