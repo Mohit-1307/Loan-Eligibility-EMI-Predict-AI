@@ -43,7 +43,7 @@ def get_dataset_sample(n=20000):
     import pandas as pd
 
     data_path = (
-        Path(__file__).resolve().parent.parent / "data" / "emi_prediction_dataset.csv"
+        Path(__file__).resolve().parent.parent / "data" / "emi_prediction.csv"
     )
 
     df = pd.read_csv(data_path, low_memory=False)
